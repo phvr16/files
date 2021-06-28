@@ -1,0 +1,78 @@
+28-Jun-2021 14:35:32 INFO - Fetching config from server at : http://localhost:1111
+28-Jun-2021 14:36:00 WARN - Could not locate PropertySource: label not found
+28-Jun-2021 14:36:00 INFO - No active profile set, falling back to default profiles: default
+28-Jun-2021 14:36:01 INFO - Bootstrapping Spring Data repositories in DEFAULT mode.
+28-Jun-2021 14:36:01 INFO - Finished Spring Data repository scanning in 72ms. Found 4 repository interfaces.
+28-Jun-2021 14:36:01 INFO - BeanFactory id=fb9613e7-0848-3c4b-be6e-dc165d609831
+28-Jun-2021 14:36:01 INFO - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8cfe5176] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+28-Jun-2021 14:36:01 INFO - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$a9185473] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+28-Jun-2021 14:36:02 INFO - Tomcat initialized with port(s): 8100 (http)
+28-Jun-2021 14:36:02 INFO - Initializing ProtocolHandler ["http-nio-8100"]
+28-Jun-2021 14:36:02 INFO - Starting service [Tomcat]
+28-Jun-2021 14:36:02 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14]
+28-Jun-2021 14:36:02 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\NEW STS\sts-4.11.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/NEW STS/sts-4.11.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;D:/NEW STS/sts-4.11.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.1\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;D:\New folder (2)\Scripts\;D:\New folder (2)\;C:\Users\DELL\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python37-32\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;;D:\New folder (2)\charm\PyCharm Community Edition 2019.3.3\bin;;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;D:\NEW STS\sts-4.11.0.RELEASE;;.]
+28-Jun-2021 14:36:02 INFO - Initializing Spring embedded WebApplicationContext
+28-Jun-2021 14:36:02 INFO - Root WebApplicationContext: initialization completed in 1890 ms
+28-Jun-2021 14:36:02 WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactoryBuilder' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactoryBuilder' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+28-Jun-2021 14:36:02 INFO - Stopping service [Tomcat]
+28-Jun-2021 14:36:02 INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+28-Jun-2021 14:36:02 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+28-Jun-2021 14:40:34 INFO - Fetching config from server at : http://localhost:1111
+28-Jun-2021 14:40:35 WARN - Could not locate PropertySource: label not found
+28-Jun-2021 14:40:35 INFO - No active profile set, falling back to default profiles: default
+28-Jun-2021 14:40:36 INFO - Bootstrapping Spring Data repositories in DEFAULT mode.
+28-Jun-2021 14:40:36 INFO - Finished Spring Data repository scanning in 93ms. Found 4 repository interfaces.
+28-Jun-2021 14:40:36 INFO - BeanFactory id=fb9613e7-0848-3c4b-be6e-dc165d609831
+28-Jun-2021 14:40:36 INFO - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f24cce4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+28-Jun-2021 14:40:37 INFO - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2b3ecfe1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+28-Jun-2021 14:40:37 INFO - Tomcat initialized with port(s): 8100 (http)
+28-Jun-2021 14:40:37 INFO - Initializing ProtocolHandler ["http-nio-8100"]
+28-Jun-2021 14:40:37 INFO - Starting service [Tomcat]
+28-Jun-2021 14:40:37 INFO - Starting Servlet engine: [Apache Tomcat/9.0.14]
+28-Jun-2021 14:40:37 INFO - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\NEW STS\sts-4.11.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:/NEW STS/sts-4.11.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin/server;D:/NEW STS/sts-4.11.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_16.0.1.v20210528-1205/jre/bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\Git\cmd;C:\Program Files\apache-maven-3.8.1\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;D:\New folder (2)\Scripts\;D:\New folder (2)\;C:\Users\DELL\AppData\Local\Programs\Python\Python37-32\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python37-32\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;;D:\New folder (2)\charm\PyCharm Community Edition 2019.3.3\bin;;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;D:\NEW STS\sts-4.11.0.RELEASE;;.]
+28-Jun-2021 14:40:38 INFO - Initializing Spring embedded WebApplicationContext
+28-Jun-2021 14:40:38 INFO - Root WebApplicationContext: initialization completed in 2655 ms
+28-Jun-2021 14:40:38 WARN - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactory' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'entityManagerFactoryBuilder' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unsatisfied dependency expressed through method 'entityManagerFactoryBuilder' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jpaVendorAdapter' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.orm.jpa.JpaVendorAdapter]: Factory method 'jpaVendorAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+28-Jun-2021 14:40:38 INFO - Stopping service [Tomcat]
+28-Jun-2021 14:40:38 INFO - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+28-Jun-2021 14:40:38 ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
